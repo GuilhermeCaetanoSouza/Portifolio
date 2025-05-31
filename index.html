@@ -170,7 +170,33 @@ Se você procura alguém comprometido, com boa base técnica e vontade de entreg
             </div>
         </section>
     </main>
-
+    <!-- Modal de Projeto -->
+    <div id="project-modal" class="project-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <div class="modal-image-container">
+                <img id="modal-image" src="" alt="Imagem do Projeto" class="modal-image">
+            </div>
+            <div class="modal-content">
+                <h2 id="modal-title"></h2>
+                <div class="project-meta">
+                    <span class="project-date"><i class="far fa-calendar-alt"></i> <span id="modal-date"></span></span>
+                    <span class="project-category"><i class="fas fa-tags"></i> <span id="modal-category"></span></span>
+                </div>
+                <div id="modal-description" class="project-description"></div>
+                <div class="project-tech">
+                    <h4>Tecnologias utilizadas:</h4>
+                    <ul id="modal-tech" class="tech-list"></ul>
+                </div>
+                <div id="modal-links" class="project-links"></div>
+            </div>
+            <!-- Rodapé com botão de fechar -->
+            <div class="modal-footer">
+                <button class="close-modal-btn">Fechar <i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="container">
             <p>&copy; <span id="year"></span> Guilherme Caetano de Souza. Todos os direitos reservados.</p>
