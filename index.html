@@ -16,7 +16,10 @@
     </header>
 
     <nav>
-        <ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-list">
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#projetos">Projetos</a></li>
@@ -25,20 +28,23 @@
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
-
     <main>
         <section id="sobre" class="section">
             <div class="container">
                 <h2>Sobre Mim</h2>
                 <div class="content">
-                    <img src="images/Minha-foto.jpeg" alt="Guilherme Caetano de Souza" class="profile-pic">
+                    <img src="images/minha-foto.jpg" alt="Guilherme Caetano de Souza" class="profile-pic">
                     <div class="text">
                         <p>
 Guilherme Caetano de Souza — Desenvolvedor em Formação | 17 anos
+
 Sou estudante da ETEC na área de Informática para Internet, com foco em desenvolvimento web e backend. Aos 17 anos, já conclui cursos de programação em Java e Node.js, além de ser formado no curso de inglês do CNA.
-Tenho experiência com as linguagens como:
-HTML, CSS, JavaScript, Python e Node.js.
+
+Tenho experiência com as seguintes linguagens e tecnologias:
+HTML, CSS, JavaScript, Python, Node.js, PHP e Java.
+
 Sou dedicado, autodidata e determinado a encontrar soluções eficazes para qualquer desafio. Quando enfrento um problema, pesquiso, estudo e aplico o que for necessário até resolvê-lo com qualidade. Estou sempre buscando evolução constante, tanto técnica quanto profissionalmente.
+
 Se você procura alguém comprometido, com boa base técnica e vontade de entregar sempre o melhor, estou pronto para ajudar no seu projeto!</p>
                     </div>
                 </div>
@@ -59,7 +65,7 @@ Se você procura alguém comprometido, com boa base técnica e vontade de entreg
                     </div>
                     <div class="skill">
                         <h3>Banco de Dados</h3>
-                        <p>MySQL</p>
+                        <p>MySQL, MongoDB</p>
                     </div>
                 </div>
             </div>
@@ -68,36 +74,83 @@ Se você procura alguém comprometido, com boa base técnica e vontade de entreg
         <section id="projetos" class="section">
             <div class="container">
                 <h2>Meus Projetos</h2>
-                <div class="projects-grid">
-                    <!-- Projeto 1 - Gerenciador de Tarefas -->
-                    <div class="project" data-project-id="0">
-                        <div class="project-card">
-                            <div class="project-image-wrapper">
-                                <img src="images/Proj_py.png" alt="Gerenciador de Tarefas" class="project-thumbnail">
-                                <div class="project-overlay">
-                                    <button class="view-details">Ver Detalhes <i class="fas fa-expand"></i></button>
+                <div class="carousel">
+                    <button class="carousel-button prev" aria-label="Projeto anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <!-- Projeto 1 - Gerenciador de Tarefas -->
+                            <div class="project">
+                                <div class="project-card">
+                                    <img src="images/Proj_py.png" alt="Gerenciador de Tarefas" class="project-thumbnail">
+                                    <h3>Gerenciador de Tarefas</h3>
+                                    <button class="view-details">Ver Detalhes</button>
+                                </div>
+                                <div class="project-details">
+                                    <div class="details-content">
+                                        <button class="close-details"><i class="fas fa-times"></i></button>
+                                        <h3>Gerenciador de Tarefas</h3>
+                                        <p class="project-description">
+                                            Um aplicativo completo para gerenciamento de tarefas com funcionalidades CRUD.
+                                            Permite adicionar, editar, marcar como concluída e excluir tarefas.
+                                        </p>
+                                        <div class="project-tech">
+                                            <h4>Tecnologias utilizadas:</h4>
+                                            <ul class="tech-list">
+                                                <li>Python</li>
+                                                <li>Flask</li>
+                                                <li>SQLite</li>
+                                                <li>HTML5</li>
+                                                <li>CSS3</li>
+                                            </ul>
+                                        </div>
+                                        <div class="project-links">
+                                            <a href="https://github.com/GuilhermeCaetanoSouza/Gerenciador_De_Tarefas" class="project-link" target="_blank">
+                                                <i class="fab fa-github"></i> Código Fonte
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="project-card-content">
-                                <h3>Gerenciador de Tarefas</h3>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Projeto 2 - Pokedex -->
-                    <div class="project" data-project-id="1">
-                        <div class="project-card">
-                            <div class="project-image-wrapper">
-                                <img src="images/pokemon.png" alt="Portfólio Pessoal" class="project-thumbnail">
-                                <div class="project-overlay">
-                                    <button class="view-details">Ver Detalhes <i class="fas fa-expand"></i></button>
+                            <!-- Adicione mais projetos aqui seguindo o mesmo padrão -->
+                            <div class="project">
+                                <div class="project-card">
+                                    <img src="images/projeto2.jpg" alt="Portfólio Pessoal" class="project-thumbnail">
+                                    <h3>Portfólio Pessoal</h3>
+                                    <button class="view-details">Ver Detalhes</button>
                                 </div>
-                            </div>
-                            <div class="project-card-content">
-                                <h3>Pokedex</h3>
+                                <div class="project-details">
+                                    <div class="details-content">
+                                        <button class="close-details"><i class="fas fa-times"></i></button>
+                                        <h3>Portfólio Pessoal</h3>
+                                        <p class="project-description">
+                                            Meu site portfólio pessoal desenvolvido para mostrar meus projetos e habilidades.
+                                        </p>
+                                        <div class="project-tech">
+                                            <h4>Tecnologias utilizadas:</h4>
+                                            <ul class="tech-list">
+                                                <li>HTML5</li>
+                                                <li>CSS3</li>
+                                                <li>JavaScript</li>
+                                            </ul>
+                                        </div>
+                                        <div class="project-links">
+                                            <a href="#" class="project-link" target="_blank">
+                                                <i class="fas fa-external-link-alt"></i> Ver Online
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <button class="carousel-button next" aria-label="Próximo projeto">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
             </div>
         </section>
@@ -106,28 +159,11 @@ Se você procura alguém comprometido, com boa base técnica e vontade de entreg
             <div class="container">
                 <h2>Certificações</h2>
                 <div class="certifications">
-                    <!-- Certificado de Inglês -->
                     <div class="certification">
-                        <h3>Inglês - Conclusão do Curso</h3>
-                        <p class="institution">CNA Idiomas</p>
-                        <p class="date">Concluído em 2024</p>
-                        <a href="images/Certificate-english.jpeg" target="_blank" class="cert-link">Ver Credencial</a>
-                    </div>
-                    
-                    <!-- Certificado de Power BI -->
-                    <div class="certification">
-                        <h3>Power BI</h3>
-                        <p class="institution">Fundaçao Bradesco</p>
-                        <p class="date">Concluído em 2024</p>
-                        <a href="images/Certificate-Powerbi.jpeg" target="_blank" class="cert-link">Ver Credencial</a>
-                    </div>
-                    
-                    <!-- Certificado de Node.js -->
-                    <div class="certification">
-                        <h3>Node.js</h3>
-                        <p class="institution">Curso em Video</p>
-                        <p class="date">Concluído em 2024</p>
-                        <a href="images/Certificate-node.png" target="_blank" class="cert-link">Ver Credencial</a>
+                        <h3>Nome da Certificação</h3>
+                        <p class="institution">Instituição</p>
+                        <p class="date">Ano de Conclusão</p>
+                        <a href="#" class="cert-link">Ver Credencial</a>
                     </div>
                 </div>
             </div>
@@ -135,27 +171,11 @@ Se você procura alguém comprometido, com boa base técnica e vontade de entreg
 
         <section id="objetivos" class="section">
             <div class="container">
-                <h2>Busco</h2>
+                <h2>O Que Eu Quero</h2>
                 <div class="goals">
-    <p>Minha primeira oportunidade profissional na área de TI através de um estágio desafiador, onde eu possa:</p>
-    <ul>
-          <p></p>
-        <li>Aplicar meus conhecimentos técnicos em projetos reais</li>
-        <li>Descobrir minha vocação dentro da area</li>
-        <li>Desenvolver habilidades práticas</li>
-        <li>Aprender com profissionais experientes</li>
-    </ul>
-      <p></p>
-    <p>Tenho especial interesse em:</p>
-    <p></p>
-    <ul>
-        <li>Explorar a area da ciência de dados e análise de informações</li>
-        <li>Participar de projetos</li>
-        <li>Crescer junto com a empresa, agregando valor enquanto me desenvolvo</li>
-    </ul>
-      <p></p>
-    <p>Meu foco é encontrar uma organização que valorize o aprendizado contínuo e me permita equilibrar meus estudos na ETEC com experiência profissional significativa.</p>
-</div>
+                    <p>Descreva aqui seus objetivos profissionais, projetos futuros e aspirações.</p>
+                    <p>Fale sobre o tipo de oportunidades que está buscando.</p>
+                </div>
             </div>
         </section>
 
@@ -163,41 +183,13 @@ Se você procura alguém comprometido, com boa base técnica e vontade de entreg
             <div class="container">
                 <h2>Contato e Redes Sociais</h2>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/guilherme-caetano-3591592bb" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="www.linkedin.com/in/guilherme-caetano-3591592bb" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
                     <a href="https://github.com/GuilhermeCaetanoSouza" class="social-link"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="mailto:guilhermecaetano437@gmail.com" class="social-link"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="guilhermecaetano437@gmail.com" class="social-link"><i class="fas fa-envelope"></i> Email</a>
                 </div>
             </div>
         </section>
     </main>
-
-    <!-- Modal de Projeto -->
-    <div id="project-modal" class="project-modal">
-        <div class="modal-overlay"></div>
-        <div class="modal-container">
-            <button class="close-modal"><i class="fas fa-times"></i></button>
-            <div class="modal-image-container">
-                <img id="modal-image" src="" alt="Imagem do Projeto" class="modal-image">
-            </div>
-            <div class="modal-content">
-                <h2 id="modal-title"></h2>
-                <div class="project-meta">
-                    <span class="project-date"><i class="far fa-calendar-alt"></i> <span id="modal-date"></span></span>
-                    <span class="project-category"><i class="fas fa-tags"></i> <span id="modal-category"></span></span>
-                </div>
-                <div id="modal-description" class="project-description"></div>
-                <div class="project-tech">
-                    <h4>Tecnologias utilizadas:</h4>
-                    <ul id="modal-tech" class="tech-list"></ul>
-                </div>
-                <div id="modal-links" class="project-links"></div>
-            </div>
-            <!-- Rodapé com botão de fechar -->
-            <div class="modal-footer">
-                <button class="close-modal-btn">Fechar <i class="fas fa-times"></i></button>
-            </div>
-        </div>
-    </div>
 
     <footer>
         <div class="container">
